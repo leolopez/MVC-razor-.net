@@ -1,0 +1,51 @@
+﻿@model WebApplication2.empleados
+
+<div>
+    <h4>empleados</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombreCompleto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nombreCompleto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fechaNacimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fechaNacimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.tipo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.tipo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.domicilio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.domicilio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.usuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usuario)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "DetalleEmpleado", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Recurso")
+</p>
